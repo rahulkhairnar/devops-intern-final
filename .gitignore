@@ -1,0 +1,26 @@
+# Editor / IDE
+.vscode/
+*.swp
+*.swo
+*~ 
+
+# System / user local
+*.log
+*.out
+containerd.out
+dockerd.out
+.viminfo
+.cache/
+.local/
+# SSH keys and secrets
+.ssh/
+*.pem
+.env
+# Python
+__pycache__/
+*.pyc
+# Node / build artifacts
+node_modules/
+dist/
+# misc
+loki-data/      # avoid potentially large loki storage
