@@ -1,43 +1,16 @@
 name: CI
 
-on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+on: [push]
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v4
-
-      - name: Set up Python 3.x
+      - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.x'
-
-      - name: Install dependencies
-        run: |
-          if [ -f requirements.txt ]; then
-            python -m pip install --upgrade pip
-            pip install -r requirements.txt
-          else
-            echo "No requirements.txt — skipping install"
-          fi
-
-      - name: Run tests
-        run: |
-          if [ -f test_script.py ]; then
-            python test_script.py
-          else
-            echo "No test_script.py — skipping tests"
-          fi
-
-      - name: Execute main script
+          python-version: '3.11'
+      - name: Run hello.py
         run: python hello.py
-
