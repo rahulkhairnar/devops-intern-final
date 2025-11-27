@@ -1,4 +1,4 @@
-[![CI](https://github.com/<OWNER>/<REPO>/actions/workflows/ci.yml/badge.svg)](https://github.com/<OWNER>/<REPO>/actions/workflows/ci.yml)
+[![CI](https://github.com/rahulkhairnar/devops-intern-final/actions/workflows/ci.yml/badge.svg)](https://github.com/rahulkhairnar/devops-intern-final/actions/workflows/ci.yml)
 
 # devops-intern-final
 
